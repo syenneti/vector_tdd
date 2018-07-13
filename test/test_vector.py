@@ -4,4 +4,11 @@ def test_make_vetor():
     v = Vector([1,2,3])
     assert len(v.nums) == 3
 
+def test_dimensions():
+    v=Vector([1,2,3,4])
+    assert v.dims == 4
+
+def test_norm():
+    v=Vector([3,4])
+    assert v.norm == 5
 
